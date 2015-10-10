@@ -1,0 +1,13 @@
+    <!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+      <file>images/icon.png</file>
+      <file>images/addtab.png</file>
+      <file>images/closetab.png</file>
+      <file>images/new.png</file>
+      <file>images/save.png</file>
+      <file>images/open.png</file>
+      <file>images/Options16.png</file>
+      <file>images/Wand16.png</file>
+      <file>images/Error16.png</file>
+    </qresource>
+    </RCC>

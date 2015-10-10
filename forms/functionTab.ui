@@ -1,0 +1,508 @@
+<ui version="4.0" >
+ <class>functionTab</class>
+ <widget class="QWidget" name="functionTab" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>110</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>0</hsizetype>
+    <vsizetype>0</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>300</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>300</width>
+    <height>110</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="XALabel" >
+   <property name="geometry" >
+    <rect>
+     <x>5</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Abs</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxXA</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelVariations" >
+   <property name="geometry" >
+    <rect>
+     <x>5</x>
+     <y>90</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Variation</string>
+   </property>
+   <property name="buddy" >
+    <cstring>comboVariations</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="YYLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>157</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Y</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxYY</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>155</x>
+     <y>89</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Colour</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="YALabel" >
+   <property name="geometry" >
+    <rect>
+     <x>157</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Abs</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxYA</cstring>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxXY" >
+   <property name="geometry" >
+    <rect>
+     <x>27</x>
+     <y>38</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxYX" >
+   <property name="geometry" >
+    <rect>
+     <x>182</x>
+     <y>18</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxYY" >
+   <property name="geometry" >
+    <rect>
+     <x>182</x>
+     <y>38</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxXA" >
+   <property name="geometry" >
+    <rect>
+     <x>27</x>
+     <y>57</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxXX" >
+   <property name="geometry" >
+    <rect>
+     <x>27</x>
+     <y>18</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="YXLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>157</x>
+     <y>20</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>X</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxYX</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="XXLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>5</x>
+     <y>20</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>X</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxXX</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="XYLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>5</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Y</string>
+   </property>
+   <property name="buddy" >
+    <cstring>doubleSpinBoxXY</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StaticXLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>-1</x>
+     <y>0</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>X Coordinates</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StaticYLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>0</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Y Coordinates</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBoxYA" >
+   <property name="geometry" >
+    <rect>
+     <x>182</x>
+     <y>58</y>
+     <width>115</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="wrapping" >
+    <bool>true</bool>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading</set>
+   </property>
+   <property name="accelerated" >
+    <bool>true</bool>
+   </property>
+   <property name="decimals" >
+    <number>13</number>
+   </property>
+   <property name="maximum" >
+    <double>1.000000000000000</double>
+   </property>
+   <property name="minimum" >
+    <double>-1.000000000000000</double>
+   </property>
+   <property name="singleStep" >
+    <double>0.000000000000100</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboVariations" >
+   <property name="geometry" >
+    <rect>
+     <x>55</x>
+     <y>86</y>
+     <width>85</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maxCount" >
+    <number>16</number>
+   </property>
+   <item>
+    <property name="text" >
+     <string>Linear</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Sinusoidal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Spherical</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Swirl</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Horseshoe</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Polar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Handkerchief</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Heart</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Disc</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Spiral</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Hyperbolic</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Diamond</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>X</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Julia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Fisheye</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>Cosine</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="colourButton" >
+   <property name="geometry" >
+    <rect>
+     <x>200</x>
+     <y>83</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>PushButton</string>
+   </property>
+   <property name="flat" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboVariations</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
