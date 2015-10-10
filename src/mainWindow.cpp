@@ -26,7 +26,7 @@ void mainWindow::createTabs(){
 	QToolButton *newTabButton = new QToolButton(tabs);
   newTabButton->setCursor(Qt::ArrowCursor);
   newTabButton->setAutoRaise(true);
-	newTabButton->setIcon(QIcon(":/images/addtab.png"));
+	newTabButton->setIcon(QIcon(":/images/document_16.png"));
   connect(newTabButton, SIGNAL(clicked()), this, SLOT(newFile()));
   newTabButton->setToolTip(tr("Add fractal"));
 	tabs->setCornerWidget(newTabButton, Qt::TopLeftCorner);
@@ -35,7 +35,7 @@ void mainWindow::createTabs(){
   
   closeTabButton->setCursor(Qt::ArrowCursor);
   closeTabButton->setAutoRaise(true);
-	closeTabButton->setIcon(QIcon(":/images/closetab.png"));
+	closeTabButton->setIcon(QIcon(":/images/delete_16.png"));
 	connect(closeTabButton, SIGNAL(clicked()), this, SLOT(closeTab()));
   closeTabButton->setToolTip(tr("Close page"));
   closeTabButton->setEnabled(false);
@@ -66,17 +66,17 @@ void mainWindow::writeSettings(){
 	settings.setValue("size", size());
 }
 void mainWindow::createActions(){
-	newAct = new QAction(QIcon(":/images/new.png"), tr("New fractal"), this);
+	newAct = new QAction(QIcon(":/images/document_16.png"), tr("New fractal"), this);
   newAct->setShortcut(tr("Ctrl+T"));
   newAct->setStatusTip(tr("Create a new fractal"));
   connect(newAct, SIGNAL(triggered()), this, SLOT(newFile()));
 
-	openAct = new QAction(QIcon(":/images/open.png"), tr("&Open fractal"), this);
+	openAct = new QAction(QIcon(":/images/folder_16.png"), tr("&Open fractal"), this);
 	openAct->setShortcut(tr("Ctrl+O"));
 	openAct->setStatusTip(tr("Open saved fractal"));
 	connect(openAct, SIGNAL(triggered()), this, SLOT(openXML()));
 
-	saveXMLAct = new QAction(QIcon(":/images/save.png"), tr("&Save XML"), this);
+	saveXMLAct = new QAction(QIcon(":/images/save_16.png"), tr("&Save XML"), this);
 	saveXMLAct->setShortcut(tr("Ctrl+S"));
 	saveXMLAct->setStatusTip(tr("Save fractal"));
 	connect(saveXMLAct, SIGNAL(triggered()), this, SLOT(saveXML()));
@@ -86,18 +86,17 @@ void mainWindow::createActions(){
 	savePictAct->setStatusTip(tr("Save picture"));
 	connect(savePictAct, SIGNAL(triggered()), this, SLOT(savePict()));
 
-	renderAct = new QAction(QIcon(":/images/Wand16.png"), tr("&Render"), this);
+	renderAct = new QAction(QIcon(":/images/flag_16.png"), tr("&Render"), this);
 	renderAct->setShortcut(tr("Ctrl+R"));
 	renderAct->setStatusTip(tr("Start rendering"));
 	connect(renderAct, SIGNAL(triggered()), this, SLOT(startRender()));
 
-	settingsAct = new QAction(QIcon(":/images/Options16.png"), tr("Options"), this);
+	settingsAct = new QAction(QIcon(":/images/gear_16.png"), tr("Options"), this);
 	settingsAct->setShortcut(tr("Ctrl+A"));
 	settingsAct->setStatusTip(tr("Alter Options"));
 	connect(settingsAct, SIGNAL(triggered()), this, SLOT(settingsOpen()));
-	
 
-	closeTabAct = new QAction(QIcon(":/images/closetab.png"), tr("Close Fractal"),this);
+	closeTabAct = new QAction(QIcon(":/images/delete_16.png"), tr("Close Fractal"),this);
 	closeTabAct->setShortcut(tr("Ctrl+W"));
 	closeTabAct->setStatusTip(tr("Close Fractal"));
 	connect(closeTabAct,SIGNAL(triggered()), this, SLOT(closeTab()));
@@ -107,7 +106,7 @@ void mainWindow::createActions(){
 	exitAct->setStatusTip(tr("Leave Ignitor"));
 	connect(exitAct, SIGNAL(triggered()), this, SLOT(close()));
 
-	stopRenderAct = new QAction(QIcon(":/images/Error16.png"), tr("S&top"),this);
+	stopRenderAct = new QAction(QIcon(":/images/block_16.png"), tr("S&top"),this);
 	stopRenderAct->setShortcut(tr("Ctrl+T"));
 	stopRenderAct->setStatusTip(tr("Stop Rendering"));
 	connect(stopRenderAct, SIGNAL(triggered()), this, SLOT(stopRender()));

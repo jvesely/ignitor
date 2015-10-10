@@ -36,14 +36,14 @@ QTabWidget * OptionDialog::createTabs(){
 	QToolButton *newTabButton = new QToolButton(tabs);
   newTabButton->setCursor(Qt::ArrowCursor);
   newTabButton->setAutoRaise(true);
-	newTabButton->setIcon(QIcon(":/images/addtab.png"));
+	newTabButton->setIcon(QIcon(":/images/plus_16.png"));
   newTabButton->setToolTip(tr("Add function"));
 	tabs->setCornerWidget(newTabButton, Qt::TopLeftCorner);
 
 	QToolButton *closeTabButton = new QToolButton(tabs);
     closeTabButton->setCursor(Qt::ArrowCursor);
   closeTabButton->setAutoRaise(true);
-	closeTabButton->setIcon(QIcon(":/images/closetab.png"));
+	closeTabButton->setIcon(QIcon(":/images/delete_16.png"));
   closeTabButton->setToolTip(tr("Remove function"));
 	tabs->setCornerWidget(closeTabButton, Qt::TopRightCorner);
 
