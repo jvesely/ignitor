@@ -1,0 +1,5 @@
+This program randomly generates and visualizes FlameFractal(http://flam3.com) images.
+
+It is a qt project to build type:
+qmake
+make
