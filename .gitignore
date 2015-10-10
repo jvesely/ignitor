@@ -1,0 +1,16 @@
+Ignitor
+Makefile
+forms/*.h
+
+*.aps
+*.cache
+*.idb
+*.pdb
+*.pws
+*.swp
+*.vcproj
+*.vcproj.*
+
+obj/
+moc/
+qrc_ignitor.cpp
