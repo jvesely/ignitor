@@ -7,43 +7,44 @@
 #include "ui_mainOpt.h"
 #include "ui_functionTab.h"
 
+class FunctionTab : public QWidget, private Ui_functionTab {
 
-class FunctionTab:public QWidget,private Ui_functionTab{
+  Q_OBJECT
 
-	Q_OBJECT
+  QColor colour;
 
-	QColor colour;
-	public:
-		FunctionTab(const Function &from); 
-		operator Function();
-	public slots:
-		void changeColour();
+public:
+  FunctionTab(const Function &from);
+  operator Function();
+public slots:
+  void changeColour();
 };
-class GeneralOptions:public QWidget,private Ui_mainOpt{
-	public:
-		GeneralOptions(fractal * origin);
-		void setFuncCount(int n);
-		int getIterations();
-		int getWidth();
-		int getHeight();
+class GeneralOptions : public QWidget, private Ui_mainOpt {
+public:
+  GeneralOptions(fractal *origin);
+  void setFuncCount(int n);
+  int getIterations();
+  int getWidth();
+  int getHeight();
 };
-class OptionDialog:public QDialog{
+class OptionDialog : public QDialog {
 
-	Q_OBJECT
+  Q_OBJECT
 
-	fractal * myFractal;
-	QTabWidget * tabs;
-	GeneralOptions * mainOpt;
+  fractal *myFractal;
+  QTabWidget *tabs;
+  GeneralOptions *mainOpt;
 
-	QDialogButtonBox * buttonBox;
-	QTabWidget * createTabs();
-	public:
-		OptionDialog(fractal * par);
-	public slots:
-		void remFunc();
-		void addFunc();
-		void tabChange(bool deleted);
-		void accept();
+  QDialogButtonBox *buttonBox;
+  QTabWidget *createTabs();
+
+public:
+  OptionDialog(fractal *par);
+public slots:
+  void remFunc();
+  void addFunc();
+  void tabChange(bool deleted);
+  void accept();
 };
 
 #endif
