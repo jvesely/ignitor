@@ -25,6 +25,7 @@ fractal::~fractal() {
   delete picture;
 }
 void fractal::paintEvent(QPaintEvent *event) {
+  Q_UNUSED(event);
   if (picture) {
     QPainter painter(this);
     int width_ = picture->width();
@@ -55,6 +56,7 @@ void fractal::setResolution(const int fWidth, const int fHeight) {
   picture = 0;
 }
 void fractal::write(const QString &text) {
+  Q_UNUSED(text);
   // clear();
   // setText(text);
 }
@@ -138,6 +140,7 @@ void fractal::engineDied() {
   emit changed();
 }
 void fractal::pointIterated(int min, int n, int max) {
+  Q_UNUSED(min);
   if (_active) {
     emit setCurrent(n);
     emit setMax(max);
@@ -181,7 +184,7 @@ int fractal::getWidth() { return _width; }
 int fractal::getHeight() { return _height; }
 void fractal::sendStatus() { engine->sendStatus(); }
 void fractal::activated(fractal *active) {
-  if (_active = active == this) {
+  if ((_active = (active == this))) {
     emit setMin(0);
     if (!engine) {
       emit setMax(0);

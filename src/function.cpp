@@ -1,7 +1,7 @@
 #include "myRandom.h"
 #include "function.h"
 #define _USE_MATH_DEFINES
-#include <math.h>
+#include <cmath>
 
 Function::Function() {
   for (int i = 0; i < 6; ++i) {
@@ -45,7 +45,6 @@ Function::Function(const double coefs[5], const double red, const double green,
 }
 bool Function::nonLinear(double &x, double &y) {
   double phi = atan2(y, x);
-  static const double SC = (double)1 / (pow((double)2, 32) - 1);
   double r = sqrt(x * x + y * y);
   switch (_nonLinear) {
   case 0:
