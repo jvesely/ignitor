@@ -1,7 +1,7 @@
 
 TEMPLATE	= app
 CONFIG		+= qt warn_on embed_manifest_exe
-QT		+= xml
+QT		+= xml widgets
 TARGET		= Ignitor
 RC_FILE		+= resources.rc
 OBJECTS_DIR = obj

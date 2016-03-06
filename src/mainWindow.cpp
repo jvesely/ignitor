@@ -1,4 +1,11 @@
 #include <QtGui>
+#include <QFileDialog>
+#include <QMenuBar>
+#include <QMessageBox>
+#include <QStatusBar>
+#include <QToolBar>
+#include <QToolButton>
+
 #include "mainWindow.h"
 #include "optionDialog.h"
 mainWindow::mainWindow() {
